@@ -41,7 +41,9 @@
 
     INSERT INTO reservation (res_cha_id, res_cli_id, res_date, res_date_debut, res_date_fin, res_prix)
     VALUES (1, 1, '2017-01-10 00:00:00', '2017-01-10 00:00:00', '2017-01-10 00:00:00', 666); 
-
+    VALUES (1, 1, '2017-01-10 00:00:00', '2017-01-10 00:00:00', '2017-01-10 00:00:00', 666); 
+    VALUES (1, 1, '2017-01-10 00:00:00', '2017-01-10 00:00:00', '2017-01-10 00:00:00', 666); 
+   
 -- insert_reservation2 : interdire les réservations si le client possède déjà 3 
 -- réservations.
 
@@ -63,6 +65,7 @@
     -- Pour tester :
 
     INSERT INTO reservation (res_cha_id, res_cli_id, res_date, res_date_debut, res_date_fin, res_prix)
+    VALUES (10, 1, '2017-01-10 00:00:00', '2017-01-10 00:00:00', '2017-01-10 00:00:00', 666);
     VALUES (10, 1, '2017-01-10 00:00:00', '2017-01-10 00:00:00', '2017-01-10 00:00:00', 666);
 
 
@@ -182,3 +185,4 @@
     UPDATE lignedecommande 
     SET prix = 10
     WHERE id_commande = 3
+
